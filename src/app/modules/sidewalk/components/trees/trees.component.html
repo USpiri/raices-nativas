@@ -1,1 +1,6 @@
-<p>trees works!</p>
+<div *ngIf="trees.length !== 0; else NoResult" class="d-flex gap-3 flex-column">
+  <app-tree [tree]="tree" *ngFor="let tree of trees"></app-tree>
+</div>
+<ng-template #NoResult>
+  <p>No se encontraron resultados</p>
+</ng-template>

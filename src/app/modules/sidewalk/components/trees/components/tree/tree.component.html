@@ -1,1 +1,18 @@
-<p>tree works!</p>
+<mat-card class="tree-container unselectable">
+  <mat-card-content>
+    <h3>{{ tree.name }}</h3>
+    <div class="d-flex gap-2">
+      <div>
+        <img
+          src="{{ tree.image }}"
+          alt="Imagen del árbol {{ tree.name }}"
+          class="tree-image"
+        />
+      </div>
+      <div class="py-2 tree-data-container">
+        <h4 class="fs-5 mb-3"><b>Nombre científico:</b> {{ tree.name_sc }}</h4>
+        <p>{{ tree.description }}</p>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

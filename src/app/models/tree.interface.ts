@@ -7,6 +7,7 @@ export interface Tree {
   throns: boolean;
   use_case: TreeUseCase;
   description: string;
+  long_description: string;
   image: string;
 }
 
