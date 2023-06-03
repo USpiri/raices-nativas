@@ -1,3 +1,7 @@
 <div class="d-flex align-items-center justify-content-center vh-100">
-  <app-sidewalk-selector></app-sidewalk-selector>
+  <app-sidewalk-selector
+    *ngIf="isSelectorActive"
+    (selectedOption)="onSelectOption()"
+  ></app-sidewalk-selector>
+  <app-trees *ngIf="!isSelectorActive"></app-trees>
 </div>
