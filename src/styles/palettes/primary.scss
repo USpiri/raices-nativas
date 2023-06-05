@@ -1,0 +1,20 @@
+@use "../variables";
+@use "@angular/material" as mat;
+
+// Primary palette
+$mat-primary: (
+  main: #126131,
+  lighter: #b8d0c1,
+  darker: #0a451f,
+  200: #126131,
+  // For slide toggle,
+  contrast:
+    (
+      main: variables.$light-primary-text,
+      lighter: variables.$dark-primary-text,
+      darker: variables.$light-primary-text,
+    ),
+);
+
+// Theme Config
+$theme-primary: mat.define-palette($mat-primary, main, lighter, darker);

@@ -1,0 +1,20 @@
+@use "../variables";
+@use "@angular/material" as mat;
+
+// Accent palette
+$mat-accent: (
+  main: #8f5999,
+  lighter: #ddcde0,
+  darker: #723e7c,
+  200: #8f5999,
+  // For slide toggle,
+  contrast:
+    (
+      main: variables.$light-primary-text,
+      lighter: variables.$dark-primary-text,
+      darker: variables.$light-primary-text,
+    ),
+);
+
+// Theme Config
+$theme-accent: mat.define-palette($mat-accent, main, lighter, darker);
