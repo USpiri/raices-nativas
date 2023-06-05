@@ -1,9 +1,8 @@
 .background {
   object-fit: cover;
+  background-position: center;
   z-index: -1;
   height: 100vh;
-  width: 100vw;
-  position: absolute;
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
