@@ -1,3 +1,44 @@
+<div>
+  <form
+    [formGroup]="modelForm"
+    class="d-flex flex-row justify-content-between w-100 gap-3"
+  >
+    <mat-form-field>
+      <mat-label>Uso</mat-label>
+      <select matNativeControl formControlName="max_height">
+        <option></option>
+        <option value="ornamental">Ornamental</option>
+        <option value="sombra">Sombra</option>
+        <option value="otro">Otro</option>
+      </select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Altura</mat-label>
+      <select matNativeControl formControlName="use_case">
+        <option></option>
+        <option value="4">4 metros</option>
+        <option value="9">9 metros</option>
+        <option value="+9">Más de 9 metros</option>
+      </select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Hojas</mat-label>
+      <select matNativeControl formControlName="perennial">
+        <option></option>
+        <option value="true">Perennes</option>
+        <option value="false">Caducifolias</option>
+      </select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Espinas</mat-label>
+      <select matNativeControl formControlName="throns">
+        <option></option>
+        <option value="true">Presentes</option>
+        <option value="false">Ausentes</option>
+      </select>
+    </mat-form-field>
+  </form>
+</div>
 <div *ngIf="trees.length !== 0; else NoResult" class="d-flex gap-3 flex-column">
   <app-tree [tree]="tree" *ngFor="let tree of trees"></app-tree>
 </div>
