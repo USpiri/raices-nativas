@@ -39,8 +39,13 @@
     </mat-form-field>
   </form>
 </div>
-<div *ngIf="trees.length !== 0; else NoResult" class="d-flex gap-3 flex-column">
-  <app-tree [tree]="tree" *ngFor="let tree of trees"></app-tree>
+<div
+  *ngIf="trees.length !== 0; else NoResult"
+  class="d-flex w-100 justify-content-center mt-5"
+>
+  <div class="d-flex flex-column align-items-center w-75 gap-3">
+    <app-tree [tree]="tree" *ngFor="let tree of trees" class="w-100"></app-tree>
+  </div>
 </div>
 <ng-template #NoResult>
   <p>No se encontraron resultados</p>
