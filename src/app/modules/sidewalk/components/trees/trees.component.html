@@ -5,17 +5,17 @@
   >
     <mat-form-field class="col-12 col-md-6 col-lg-3">
       <mat-label>Uso</mat-label>
-      <select matNativeControl formControlName="max_height">
-        <option></option>
+      <select matNativeControl formControlName="use_case" (change)="filter()">
+        <option [value]="null"></option>
         <option value="ornamental">Ornamental</option>
-        <option value="sombra">Sombra</option>
-        <option value="otro">Otro</option>
+        <option value="shadows">Sombra</option>
+        <option value="others">Otro</option>
       </select>
     </mat-form-field>
     <mat-form-field class="col-12 col-md-6 col-lg-3">
       <mat-label>Altura</mat-label>
-      <select matNativeControl formControlName="use_case">
-        <option></option>
+      <select matNativeControl formControlName="max_height" (change)="filter()">
+        <option [value]="null"></option>
         <option value="4">4 metros</option>
         <option value="9">9 metros</option>
         <option value="+9">Más de 9 metros</option>
@@ -23,16 +23,16 @@
     </mat-form-field>
     <mat-form-field class="col-12 col-md-6 col-lg-3">
       <mat-label>Hojas</mat-label>
-      <select matNativeControl formControlName="perennial">
-        <option></option>
+      <select matNativeControl formControlName="perennial" (change)="filter()">
+        <option [value]="null"></option>
         <option value="true">Perennes</option>
         <option value="false">Caducifolias</option>
       </select>
     </mat-form-field>
     <mat-form-field class="col-12 col-md-6 col-lg-3">
       <mat-label>Espinas</mat-label>
-      <select matNativeControl formControlName="throns">
-        <option></option>
+      <select matNativeControl formControlName="thorns" (change)="filter()">
+        <option [value]="null"></option>
         <option value="true">Presentes</option>
         <option value="false">Ausentes</option>
       </select>
@@ -44,7 +44,11 @@
   class="d-flex w-100 justify-content-center mt-5"
 >
   <div class="d-flex flex-column align-items-center w-md-75 gap-3">
-    <app-tree [tree]="tree" *ngFor="let tree of trees" class="w-100"></app-tree>
+    <app-tree
+      [tree]="tree"
+      *ngFor="let tree of filteredTrees"
+      class="w-100"
+    ></app-tree>
   </div>
 </div>
 <ng-template #NoResult>
