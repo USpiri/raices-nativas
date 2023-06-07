@@ -13,7 +13,7 @@ export class TreesComponent implements OnInit {
   trees: Tree[] = TREES;
   filteredTrees: Tree[] = [];
   modelForm: FormGroup;
-  sidewalkFilter: TreeSidewalk = null;
+  sidewalkFilter: TreeSidewalk = 'large';
 
   private fb = inject(FormBuilder);
   private selector = inject(SelectorService);
@@ -55,14 +55,14 @@ export class TreesComponent implements OnInit {
             return true; // Para otros valores que no sean los grupos específicos
           });
         } else if (clave === 'sidewalk_size') {
-          if (valor === 'narrow') {
+          if (valor === 'small') {
             filteredTrees = filteredTrees.filter(
-              (tree) => tree.sidewalk_size === 'narrow'
+              (tree) => tree.sidewalk_size === 'small'
             );
           } else if (valor === 'medium') {
             filteredTrees = filteredTrees.filter(
               (tree) =>
-                tree.sidewalk_size === 'narrow' ||
+                tree.sidewalk_size === 'small' ||
                 tree.sidewalk_size === 'medium'
             );
           }

@@ -11,5 +11,5 @@ export interface Tree {
   image: string;
 }
 
-export type TreeSidewalk = 'narrow' | 'medium' | 'wide' | null;
+export type TreeSidewalk = 'small' | 'medium' | 'large';
 export type TreeUseCase = 'ornamental' | 'shadows' | 'others';
