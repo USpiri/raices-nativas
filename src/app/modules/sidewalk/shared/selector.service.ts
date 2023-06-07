@@ -6,7 +6,7 @@ import { TreeSidewalk } from 'src/app/models/tree.interface';
   providedIn: 'root',
 })
 export class SelectorService {
-  private selectedValueSubject = new BehaviorSubject<TreeSidewalk>(null);
+  private selectedValueSubject = new BehaviorSubject<TreeSidewalk>('large');
   selectedValue = this.selectedValueSubject.asObservable();
 
   setSidewalkSize(state: TreeSidewalk) {

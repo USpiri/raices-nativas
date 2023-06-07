@@ -4,7 +4,7 @@ export const TREES: Tree[] = [
   {
     name: 'Acacia Mansa',
     name_sc: 'Sesbania punicea',
-    sidewalk_size: 'narrow',
+    sidewalk_size: 'small',
     max_height: 3,
     perennial: true,
     thorns: false,
@@ -16,7 +16,7 @@ export const TREES: Tree[] = [
   {
     name: 'Lagaña de perro',
     name_sc: 'Caesalpinia gilliesii',
-    sidewalk_size: 'narrow',
+    sidewalk_size: 'small',
     max_height: 3,
     perennial: false,
     thorns: false,
@@ -184,7 +184,7 @@ export const TREES: Tree[] = [
   {
     name: 'Molle de beber ',
     name_sc: 'Lithrea molleoides (Vell.) Engl.',
-    sidewalk_size: 'wide',
+    sidewalk_size: 'large',
     max_height: 8,
     perennial: true,
     thorns: false,
@@ -196,7 +196,7 @@ export const TREES: Tree[] = [
   {
     name: 'Moradillo',
     name_sc: 'Schinus fasciculata (Griseb) I.M. Johnst.',
-    sidewalk_size: 'wide',
+    sidewalk_size: 'large',
     max_height: 6,
     perennial: false,
     thorns: true,
@@ -208,7 +208,7 @@ export const TREES: Tree[] = [
   {
     name: 'Algarrobo blanco',
     name_sc: 'Prosopis alba Griseb.',
-    sidewalk_size: 'wide',
+    sidewalk_size: 'large',
     max_height: 18,
     perennial: false,
     thorns: true,
@@ -220,7 +220,7 @@ export const TREES: Tree[] = [
   {
     name: 'Algarrobo negro',
     name_sc: 'Prosopis nigra (Griseb.) Hieron.',
-    sidewalk_size: 'wide',
+    sidewalk_size: 'large',
     max_height: 8,
     perennial: false,
     thorns: true,
@@ -232,7 +232,7 @@ export const TREES: Tree[] = [
   {
     name: 'Caldén',
     name_sc: 'Prosopis caldenia Burkart',
-    sidewalk_size: 'wide',
+    sidewalk_size: 'large',
     max_height: 12,
     perennial: false,
     thorns: true,
@@ -244,7 +244,7 @@ export const TREES: Tree[] = [
   {
     name: 'Mistol',
     name_sc: 'Ziziphus mistol Griseb.',
-    sidewalk_size: 'wide',
+    sidewalk_size: 'large',
     max_height: 10,
     perennial: false,
     thorns: true,
@@ -256,7 +256,7 @@ export const TREES: Tree[] = [
   {
     name: 'Orco Quebracho',
     name_sc: 'Schinopsis marginata Engler',
-    sidewalk_size: 'wide',
+    sidewalk_size: 'large',
     max_height: 20,
     perennial: false,
     thorns: false,

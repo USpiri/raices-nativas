@@ -10,7 +10,7 @@ export class TreeComponent {
   @Input({ required: true }) tree: Tree = {
     name: '',
     name_sc: '',
-    sidewalk_size: 'narrow',
+    sidewalk_size: 'small',
     max_height: 0,
     perennial: false,
     thorns: false,
