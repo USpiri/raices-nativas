@@ -3,47 +3,63 @@
     [formGroup]="modelForm"
     class="row d-flex justify-content-between w-100 m-0"
   >
-    <mat-form-field class="col-12 col-md-6 col-lg-3">
+    <mat-form-field class="col-6 col-lg-3">
       <mat-label>Uso</mat-label>
-      <select matNativeControl formControlName="use_case" (change)="filter()">
-        <option value=""></option>
-        <option value="ornamental">Ornamental</option>
-        <option value="shadows">Sombra</option>
-        <option value="others">Otro</option>
-      </select>
+      <mat-select
+        matNativeControl
+        formControlName="use_case"
+        (selectionChange)="filter()"
+      >
+        <mat-option value=""></mat-option>
+        <mat-option value="ornamental">Ornamental</mat-option>
+        <mat-option value="shadows">Sombra</mat-option>
+        <mat-option value="others">Otro</mat-option>
+      </mat-select>
     </mat-form-field>
-    <mat-form-field class="col-12 col-md-6 col-lg-3">
+    <mat-form-field class="col-6 col-lg-3">
       <mat-label>Altura</mat-label>
-      <select matNativeControl formControlName="max_height" (change)="filter()">
-        <option value=""></option>
-        <option value="4">4 metros</option>
-        <option value="9">9 metros</option>
-        <option value="+9">Más de 9 metros</option>
-      </select>
+      <mat-select
+        matNativeControl
+        formControlName="max_height"
+        (selectionChange)="filter()"
+      >
+        <mat-option value=""></mat-option>
+        <mat-option value="4">4 metros</mat-option>
+        <mat-option value="9">9 metros</mat-option>
+        <mat-option value="+9">Más de 9 metros</mat-option>
+      </mat-select>
     </mat-form-field>
-    <mat-form-field class="col-12 col-md-6 col-lg-3">
+    <mat-form-field class="col-6 col-lg-3">
       <mat-label>Hojas</mat-label>
-      <select matNativeControl formControlName="perennial" (change)="filter()">
-        <option value=""></option>
-        <option value="true">Perennes</option>
-        <option value="false">Caducifolias</option>
-      </select>
+      <mat-select
+        matNativeControl
+        formControlName="perennial"
+        (selectionChange)="filter()"
+      >
+        <mat-option value=""></mat-option>
+        <mat-option value="true">Perennes</mat-option>
+        <mat-option value="false">Caducifolias</mat-option>
+      </mat-select>
     </mat-form-field>
-    <mat-form-field class="col-12 col-md-6 col-lg-3">
+    <mat-form-field class="col-6 col-lg-3">
       <mat-label>Espinas</mat-label>
-      <select matNativeControl formControlName="thorns" (change)="filter()">
-        <option value=""></option>
-        <option value="true">Presentes</option>
-        <option value="false">Ausentes</option>
-      </select>
+      <mat-select
+        matNativeControl
+        formControlName="thorns"
+        (selectionChange)="filter()"
+      >
+        <mat-option value=""></mat-option>
+        <mat-option value="true">Presentes</mat-option>
+        <mat-option value="false">Ausentes</mat-option>
+      </mat-select>
     </mat-form-field>
   </form>
 </div>
 <div
   *ngIf="filteredTrees.length !== 0; else NoResult"
-  class="d-flex w-100 justify-content-center mt-5"
+  class="d-flex w-100 justify-content-center mt-4"
 >
-  <div class="d-flex flex-column align-items-center w-md-75 gap-3">
+  <div class="d-flex flex-column align-items-center w-100 gap-3">
     <app-tree
       [tree]="tree"
       *ngFor="let tree of filteredTrees"
