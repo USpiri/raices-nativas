@@ -6,7 +6,7 @@
     <mat-form-field class="col-12 col-md-6 col-lg-3">
       <mat-label>Uso</mat-label>
       <select matNativeControl formControlName="use_case" (change)="filter()">
-        <option [value]="null"></option>
+        <option value=""></option>
         <option value="ornamental">Ornamental</option>
         <option value="shadows">Sombra</option>
         <option value="others">Otro</option>
@@ -15,7 +15,7 @@
     <mat-form-field class="col-12 col-md-6 col-lg-3">
       <mat-label>Altura</mat-label>
       <select matNativeControl formControlName="max_height" (change)="filter()">
-        <option [value]="null"></option>
+        <option value=""></option>
         <option value="4">4 metros</option>
         <option value="9">9 metros</option>
         <option value="+9">Más de 9 metros</option>
@@ -24,7 +24,7 @@
     <mat-form-field class="col-12 col-md-6 col-lg-3">
       <mat-label>Hojas</mat-label>
       <select matNativeControl formControlName="perennial" (change)="filter()">
-        <option [value]="null"></option>
+        <option value=""></option>
         <option value="true">Perennes</option>
         <option value="false">Caducifolias</option>
       </select>
@@ -32,7 +32,7 @@
     <mat-form-field class="col-12 col-md-6 col-lg-3">
       <mat-label>Espinas</mat-label>
       <select matNativeControl formControlName="thorns" (change)="filter()">
-        <option [value]="null"></option>
+        <option value=""></option>
         <option value="true">Presentes</option>
         <option value="false">Ausentes</option>
       </select>
@@ -40,7 +40,7 @@
   </form>
 </div>
 <div
-  *ngIf="trees.length !== 0; else NoResult"
+  *ngIf="filteredTrees.length !== 0; else NoResult"
   class="d-flex w-100 justify-content-center mt-5"
 >
   <div class="d-flex flex-column align-items-center w-md-75 gap-3">
