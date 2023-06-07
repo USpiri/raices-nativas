@@ -11,7 +11,8 @@ export const TREES: Tree[] = [
     use_case: 'ornamental',
     long_description: '',
     description: '',
-    image: 'https://picsum.photos/seed/cualquier/300/200',
+    image:
+      'https://drive.google.com/uc?export=view&id=1tYWauTy9XyPBpoQ0Fz7fxr18mUPGK-vT',
   },
   {
     name: 'Lagaña de perro',
@@ -23,7 +24,8 @@ export const TREES: Tree[] = [
     use_case: 'ornamental',
     long_description: '',
     description: '',
-    image: 'https://picsum.photos/seed/cualquier/300/200',
+    image:
+      'https://drive.google.com/uc?export=view&id=1scyWHpuGq38ujb-FsyZYRH34es2bVvw3',
   },
   {
     name: 'Albaricoque',
@@ -35,7 +37,8 @@ export const TREES: Tree[] = [
     use_case: 'others',
     long_description: '',
     description: '',
-    image: 'https://picsum.photos/seed/cualquier/300/200',
+    image:
+      'https://drive.google.com/uc?export=view&id=1emDNvJNEvvW5BM8ySSdkF0OgV_amnJyd',
   },
   {
     name: 'Brea',
@@ -47,7 +50,8 @@ export const TREES: Tree[] = [
     use_case: 'ornamental',
     long_description: '',
     description: '',
-    image: 'https://picsum.photos/seed/cualquier/300/200',
+    image:
+      'https://drive.google.com/uc?export=view&id=19ptYPm7DZceg0bJmXZ05qD4WP_Dv2tEt',
   },
   {
     name: 'Chañar',
@@ -59,7 +63,8 @@ export const TREES: Tree[] = [
     use_case: 'ornamental',
     long_description: '',
     description: '',
-    image: 'https://picsum.photos/seed/cualquier/300/200',
+    image:
+      'https://drive.google.com/uc?export=view&id=1eTTbExqUrCnQFgzdhOv_WFt5pitFOBe7',
   },
   {
     name: 'Curupí',
@@ -71,7 +76,8 @@ export const TREES: Tree[] = [
     use_case: 'shadows',
     long_description: '',
     description: '',
-    image: 'https://picsum.photos/seed/cualquier/300/200',
+    image:
+      'https://drive.google.com/uc?export=view&id=1LZXty0P8oEQojigjoTUu1-QxB8UzJ5Yo',
   },
   {
     name: 'Palo de leche',
@@ -83,7 +89,8 @@ export const TREES: Tree[] = [
     use_case: 'shadows',
     long_description: '',
     description: '',
-    image: 'https://picsum.photos/seed/cualquier/300/200',
+    image:
+      'https://drive.google.com/uc?export=view&id=1nb9CC6A3rJl42dfGLFEPnLIsVNplciA5',
   },
   {
     name: 'Manzano de campo',
@@ -95,7 +102,8 @@ export const TREES: Tree[] = [
     use_case: 'others',
     long_description: '',
     description: '',
-    image: 'https://picsum.photos/seed/cualquier/300/200',
+    image:
+      'https://drive.google.com/uc?export=view&id=1J0TwvKTfPQCu4LEny2G7UPS_e6kUZTTd',
   },
   {
     name: 'Mato',
@@ -107,11 +115,12 @@ export const TREES: Tree[] = [
     use_case: 'others',
     long_description: '',
     description: '',
-    image: 'https://picsum.photos/seed/cualquier/300/200',
+    image:
+      'https://drive.google.com/uc?export=view&id=1I3Pwd6UjmEE1vMnRr1Nw7M8nkZu34Huw',
   },
   {
     name: 'Mistol del zorro',
-    name_sc: ' Castela coccinea Griseb.',
+    name_sc: 'Castela coccinea Griseb.',
     sidewalk_size: 'medium',
     max_height: 4,
     perennial: true,
@@ -119,7 +128,8 @@ export const TREES: Tree[] = [
     use_case: 'others',
     long_description: '',
     description: '',
-    image: 'https://picsum.photos/seed/cualquier/300/200',
+    image:
+      'https://drive.google.com/uc?export=view&id=1yZwnN_6Ah_spKfHGExZK5YfXBkGFBIaV',
   },
   {
     name: 'Cina Cina',
@@ -131,7 +141,8 @@ export const TREES: Tree[] = [
     use_case: 'ornamental',
     long_description: '',
     description: '',
-    image: 'https://picsum.photos/seed/cualquier/300/200',
+    image:
+      'https://drive.google.com/uc?export=view&id=1fEcJrEc-1bh0gWtWoKUU_q-7eF1qTlM2',
   },
   {
     name: 'Espinillo negro',
@@ -143,7 +154,8 @@ export const TREES: Tree[] = [
     use_case: 'ornamental',
     long_description: '',
     description: '',
-    image: 'https://picsum.photos/seed/cualquier/300/200',
+    image:
+      'https://drive.google.com/uc?export=view&id=1_pW3fxanGR4Ntzx1NaK2fiSQR6dx26PZ',
   },
   {
     name: 'Espinillo',
@@ -155,7 +167,8 @@ export const TREES: Tree[] = [
     use_case: 'ornamental',
     long_description: '',
     description: '',
-    image: 'https://picsum.photos/seed/cualquier/300/200',
+    image:
+      'https://drive.google.com/uc?export=view&id=1Szslq4rpvf9JflKF1w8R8LsRris7XaHL',
   },
   {
     name: 'Durazno de campo',
@@ -167,7 +180,8 @@ export const TREES: Tree[] = [
     use_case: 'ornamental',
     long_description: '',
     description: '',
-    image: 'https://picsum.photos/seed/cualquier/300/200',
+    image:
+      'https://drive.google.com/uc?export=view&id=1zRF8c1ELbtUStcYUywNAU4_BvcaKFOYy',
   },
   {
     name: 'Palo cruz',
@@ -179,7 +193,8 @@ export const TREES: Tree[] = [
     use_case: 'ornamental',
     long_description: '',
     description: '',
-    image: 'https://picsum.photos/seed/cualquier/300/200',
+    image:
+      'https://drive.google.com/uc?export=view&id=1VDA1Wv0OC-R5PzTkMO0D-mt18eL_Y19S',
   },
   {
     name: 'Molle de beber ',
@@ -191,7 +206,8 @@ export const TREES: Tree[] = [
     use_case: 'shadows',
     long_description: '',
     description: '',
-    image: 'https://picsum.photos/seed/cualquier/300/200',
+    image:
+      'https://drive.google.com/uc?export=view&id=1umz-zoTmwM3t4onUE_u0c4lAoETvD396',
   },
   {
     name: 'Moradillo',
@@ -203,7 +219,8 @@ export const TREES: Tree[] = [
     use_case: 'others',
     long_description: '',
     description: '',
-    image: 'https://picsum.photos/seed/cualquier/300/200',
+    image:
+      'https://drive.google.com/uc?export=view&id=1yyqto215WMWr_OLF9WZyFGQNC8Pkte_c',
   },
   {
     name: 'Algarrobo blanco',
@@ -215,7 +232,8 @@ export const TREES: Tree[] = [
     use_case: 'shadows',
     long_description: '',
     description: '',
-    image: 'https://picsum.photos/seed/cualquier/300/200',
+    image:
+      'https://drive.google.com/uc?export=view&id=1RopDCYolLKZ-4lbPAhq0iKnfxhANjc5B',
   },
   {
     name: 'Algarrobo negro',
@@ -227,7 +245,8 @@ export const TREES: Tree[] = [
     use_case: 'shadows',
     long_description: '',
     description: '',
-    image: 'https://picsum.photos/seed/cualquier/300/200',
+    image:
+      'https://drive.google.com/uc?export=view&id=1C8dmMVUsgPaKHCKq5TcsgjSZP1UFC1Uk',
   },
   {
     name: 'Caldén',
@@ -239,7 +258,8 @@ export const TREES: Tree[] = [
     use_case: 'shadows',
     long_description: '',
     description: '',
-    image: 'https://picsum.photos/seed/cualquier/300/200',
+    image:
+      'https://drive.google.com/uc?export=view&id=1vY2LA2-elukQ1oKGltl-M_KQ8c9YSQsK',
   },
   {
     name: 'Mistol',
@@ -251,7 +271,8 @@ export const TREES: Tree[] = [
     use_case: 'shadows',
     long_description: '',
     description: '',
-    image: 'https://picsum.photos/seed/cualquier/300/200',
+    image:
+      'https://drive.google.com/uc?export=view&id=1ovCkNkyQgDJdTE3E-BtAYku8t8AB8EIK',
   },
   {
     name: 'Orco Quebracho',
@@ -263,6 +284,7 @@ export const TREES: Tree[] = [
     use_case: 'shadows',
     long_description: '',
     description: '',
-    image: 'https://picsum.photos/seed/cualquier/300/200',
+    image:
+      'https://drive.google.com/uc?export=view&id=1FHLGcIicu4Is0rWXVHFglOq6STgYCEWn',
   },
 ];
