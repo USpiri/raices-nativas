@@ -4,12 +4,12 @@ export interface Tree {
   sidewalk_size: TreeSidewalk;
   max_height: number;
   perennial: boolean;
-  throns: boolean;
+  thorns: boolean;
   use_case: TreeUseCase;
   description: string;
   long_description: string;
   image: string;
 }
 
-export type TreeSidewalk = 'Angosta' | 'Mediana' | 'Ancha';
-export type TreeUseCase = 'Ornamental' | 'Sombra' | 'Otros';
+export type TreeSidewalk = 'narrow' | 'medium' | 'wide';
+export type TreeUseCase = 'ornamental' | 'shadows' | 'others';
