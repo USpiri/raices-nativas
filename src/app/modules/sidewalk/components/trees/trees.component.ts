@@ -1,19 +1,22 @@
-import { Component, inject } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { Tree } from 'src/app/models/tree.interface';
+import { Tree, TreeSidewalk } from 'src/app/models/tree.interface';
 import { TREES } from 'src/assets/data/tree.mock';
+import { SelectorService } from '../../shared/selector.service';
 
 @Component({
   selector: 'app-trees',
   templateUrl: './trees.component.html',
   styleUrls: ['./trees.component.scss'],
 })
-export class TreesComponent {
+export class TreesComponent implements OnInit {
   trees: Tree[] = TREES;
   filteredTrees: Tree[] = [];
   modelForm: FormGroup;
+  sidewalkFilter: TreeSidewalk = null;
 
   private fb = inject(FormBuilder);
+  private selector = inject(SelectorService);
 
   constructor() {
     this.modelForm = this.fb.group({
@@ -21,8 +24,16 @@ export class TreesComponent {
       perennial: [null],
       thorns: [null],
       use_case: [null],
+      sidewalk_size: [this.sidewalkFilter],
     });
-    this.filteredTrees = [...this.trees];
+    this.selector.selectedValue.subscribe(
+      (value) => (this.sidewalkFilter = value)
+    );
+  }
+
+  ngOnInit(): void {
+    this.modelForm.get('sidewalk_size')?.setValue(this.sidewalkFilter);
+    this.filter();
   }
 
   filter() {
@@ -43,6 +54,18 @@ export class TreesComponent {
             }
             return true; // Para otros valores que no sean los grupos específicos
           });
+        } else if (clave === 'sidewalk_size') {
+          if (valor === 'narrow') {
+            filteredTrees = filteredTrees.filter(
+              (tree) => tree.sidewalk_size === 'narrow'
+            );
+          } else if (valor === 'medium') {
+            filteredTrees = filteredTrees.filter(
+              (tree) =>
+                tree.sidewalk_size === 'narrow' ||
+                tree.sidewalk_size === 'medium'
+            );
+          }
         } else if (typeof valor === 'string') {
           filteredTrees = filteredTrees.filter((tree) => {
             const treeValue = String(tree[clave as keyof Tree]).toLowerCase();
