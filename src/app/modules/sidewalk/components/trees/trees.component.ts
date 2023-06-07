@@ -30,7 +30,7 @@ export class TreesComponent {
     let filteredTrees = [...this.trees];
 
     Object.entries(filterValue).forEach(([clave, valor]) => {
-      if (valor !== null) {
+      if (valor !== '' && valor !== null) {
         if (typeof valor === 'string') {
           filteredTrees = filteredTrees.filter((tree) => {
             const treeValue = String(tree[clave as keyof Tree]).toLowerCase();
