@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { TreeSidewalk } from 'src/app/models/tree.interface';
 
 @Component({
   selector: 'app-sidewalk',
@@ -8,9 +7,7 @@ import { TreeSidewalk } from 'src/app/models/tree.interface';
 })
 export class SidewalkComponent {
   isSelectorActive = true;
-  sidewalkSize: TreeSidewalk = null;
-  onSelectOption(value: TreeSidewalk) {
-    this.sidewalkSize = value;
+  onSelectOption() {
     this.isSelectorActive = false;
   }
 }

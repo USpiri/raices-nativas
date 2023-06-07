@@ -3,7 +3,7 @@
     <mat-card-content>
       <app-sidewalk-selector
         *ngIf="isSelectorActive"
-        (selectedOption)="onSelectOption($event)"
+        (selectedOption)="onSelectOption()"
       ></app-sidewalk-selector>
       <app-trees *ngIf="!isSelectorActive"></app-trees>
     </mat-card-content>
