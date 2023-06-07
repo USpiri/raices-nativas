@@ -1,8 +1,14 @@
-.tree-image {
-  border-radius: 5px;
+.tree-image-container {
   height: 200px;
   width: 300px;
-  size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .tree-image {
+    width: 100%;
+  }
 }
 .tree-container {
   cursor: pointer;
