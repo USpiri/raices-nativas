@@ -14,6 +14,9 @@
 .title {
   font-size: 2rem;
 }
+.garden {
+  width: unset;
+}
 @media (max-width: 992px) {
   .transparent-card {
     width: 75%;
@@ -23,6 +26,11 @@
     width: 100%;
   }
   .text-size {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .garden {
     width: 100%;
   }
 }
