@@ -1,8 +1,27 @@
 <div class="d-flex align-items-center justify-content-center vh-100">
-  <div class="d-flex align-items-center gap-2">
-    <a mat-flat-button color="primary" [routerLink]="'sidewalk'"
-      >Árboles de Vereda</a
-    >
-    <a mat-flat-button color="primary" [routerLink]="'garden'">Jardín</a>
-  </div>
+  <mat-card class="p-3 transparent-card d-flex align-items-center gap-3">
+    <h1 class="title">Raices Nativas</h1>
+    <p class="text-center description text-size">
+      Encuentra plantas nativas que se ajusten a tus gustos y preferencias, ya
+      sea para la vereda o el jardín.
+    </p>
+    <div class="d-flex align-items-center gap-2">
+      <a mat-flat-button color="primary" [routerLink]="'sidewalk'"
+        >Árboles de Vereda</a
+      >
+      <a mat-flat-button color="primary" [routerLink]="'garden'">Jardín</a>
+    </div>
+    <div class="mt-3 p-2">
+      <p class="text-center">
+        ¡Descubre la diversidad y los beneficios de plantar vegetación nativa y
+        contribuye con la conservación de la biodiversidad a través de una
+        elección consciente de plantas nativas!
+      </p>
+      <p class="transparent-text m-0">
+        Solo se proporciona información de árboles nativos recomendados por el
+        plan forestal de la Municipalidad de Córdoba, aplicable solo a dicha
+        ciudad.
+      </p>
+    </div>
+  </mat-card>
 </div>

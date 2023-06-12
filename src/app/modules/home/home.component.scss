@@ -1,0 +1,28 @@
+.transparent-card {
+  background-color: rgba(48, 48, 48, 0.5);
+  width: 50%;
+}
+.text-size {
+  width: 80%;
+}
+.description {
+  font-size: 1.25rem;
+}
+.transparent-text {
+  color: rgba($color: #ffffff, $alpha: 0.6);
+}
+.title {
+  font-size: 2rem;
+}
+@media (max-width: 992px) {
+  .transparent-card {
+    width: 75%;
+  }
+  .description {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .text-size {
+    width: 100%;
+  }
+}
